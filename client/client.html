@@ -1,0 +1,26 @@
+<head>
+  <title>Worldcup 2014 App</title>
+</head>
+
+<body>
+  <h1>Worlcup 2014 App</h1>
+  {{> welcome }}
+</body>
+
+<template name="welcome">
+  <p>
+    Welcome to the World Cup 2014 app!
+  </p>
+</template>
+
+<template name="match">
+  <h3>France <strong>{{ countFrance }}</strong> - Brazil <strong>{{ countBrazil }}</strong></h3>
+
+  {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+  {{/each}}
+</template>
+
+<template name="loading">
+  <div class="loadingclock"></div>
+</template>
